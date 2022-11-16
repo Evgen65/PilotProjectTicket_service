@@ -12,6 +12,7 @@ public class StartTicketTest {
     public void preCondition() {
         wd = new ChromeDriver();
         wd.get("https://ticket-service-69443.firebaseapp.com/");
+        System.out.println("Precondition");
 
     }
 
@@ -25,6 +26,7 @@ public class StartTicketTest {
 
     @AfterMethod
     public void postCondition() {
+        System.out.println("Postcondition");
         //  wd.close();
       //  wd.quit();
 
